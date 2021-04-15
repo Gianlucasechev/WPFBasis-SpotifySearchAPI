@@ -1,0 +1,47 @@
+﻿<Window x:Class="GridPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GridPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Width="250" Height="70" Visibility="Collapsed" Content="Boton Prueba estoy en la columna 0 fila 0"></Button>
+        <Button Width="250" Height="30" Content="Boton Prueba estoy en la columna 1 fila 0" Grid.Column="1"></Button>
+        <Button Width="250" Height="30" Content="Boton Prueba estoy en la columna 0 fila 1" Grid.Row="1"></Button>
+        <Button Width="250" Height="30" Content="Boton Prueba estoy en la columna 1 fila 1" Grid.Row="1" Grid.Column="1"></Button>
+        <!--<Button Width="250" Height="30" Content="Boton Prueba estoy en la columna 0 fila 2" Grid.Row="2" Grid.Column="0"></Button>-->
+        <Button Grid.ColumnSpan="2" Grid.RowSpan="2" Width="250" Height="30" Content="Boton Prueba estoy en la columna 1 fila 2" Grid.Row="2" Grid.Column="0"></Button>
+        <StackPanel  Grid.Column="2" Orientation="Vertical">
+            <Button Content="Buton de prueba para probar anidacion"></Button>
+            <Button Content="Buton de prueba para probar anidacion"></Button>
+            <Button Content="Buton de prueba para probar anidacion"></Button>
+        </StackPanel>
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Content="menu" Grid.Column="1"></Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="ColorTexto1" Color="DeepSkyBlue"></SolidColorBrush>
+    <SolidColorBrush x:Key="ColorTexto2" Color="#3c3c3c"></SolidColorBrush>
+
+    <Style x:Key="EstiloT1" TargetType="TextBlock">
+        <Setter Property="Background" Value="{StaticResource ColorTexto1}"></Setter>
+        <Setter Property="Foreground" Value="{StaticResource ColorTexto2}"/>
+        <Setter Property="FontSize" Value="25"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+    </Style>
+    <Style x:Key="EstiloT2" TargetType="TextBlock">
+        <Setter Property="Background" Value="{StaticResource ColorTexto2}"></Setter>
+        <Setter Property="Foreground" Value="{StaticResource ColorTexto1}"/>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+    </Style>
+</ResourceDictionary>

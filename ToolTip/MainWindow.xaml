@@ -1,0 +1,33 @@
+﻿<Window x:Class="ToolTip.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToolTip"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Topmost="True">
+    <Grid>
+        <StackPanel>
+            <Button HorizontalAlignment="center" 
+                       VerticalAlignment="center" Margin="20" 
+                       Width="400" Height="50" 
+                       Content="Pon el mouse sobre este botón para que veas el hola mundo"
+                       >
+                <Button.ToolTip>
+                    <StackPanel>
+                        <TextBlock Text="Esto es un Hola Mundo, muy bien hecho"></TextBlock>
+                        <TextBlock Text="Utilizando tooltip para fines de demostración" FontSize="11" Padding="0 10 0 0"></TextBlock>
+                        <Border BorderBrush="Gray" Visibility="Visible" BorderThickness="2.5"></Border>
+                        <StackPanel>
+                            <TextBlock Text="Toolkit" FontSize="8"></TextBlock>
+                            <TextBlock Text="Presiona F1 si necesitas más ayuda" FontSize="11" FontStyle="Italic"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    
+                </Button.ToolTip>
+                
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
